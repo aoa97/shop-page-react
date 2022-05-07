@@ -1,0 +1,57 @@
+.pag {
+  cursor: pointer;
+  margin-top: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pag-arrow {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--pagination-color);
+  color: var(--text-color-1);
+}
+
+.pag-arrow:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.pag-arrow.disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+
+ul.pag-pages {
+  margin: 0 0.5rem;
+  background-color: var(--pagination-color);
+  border-radius: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.pag-pages li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.2004rem;
+  padding: 0.7rem 1.19rem;
+  font-size: 1.4rem;
+  color: var(--text-color-1);
+}
+
+ul.pag-pages li:hover {
+  color: var(--primary-color);
+}
+
+ul.pag-pages li.active {
+  border-radius: 7rem;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: #fff;
+}

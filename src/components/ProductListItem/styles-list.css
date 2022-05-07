@@ -1,0 +1,89 @@
+.plv {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Start Left */
+.plv__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plv__left img {
+  width: 100%;
+  height: auto;
+}
+/* End Left */
+
+/* Start Center */
+.plv__center {
+  flex: 2;
+  padding: 2.1rem 1.4rem;
+  border-right: 1px solid var(--card-border-color);
+}
+
+.plv__name {
+  font-weight: 600;
+  color: var(--text-color-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.plv__name:hover {
+  color: var(--primary-color);
+}
+
+.plv__brand {
+  margin: 0.42rem 0 0.7rem 0;
+  font-size: 1.25rem;
+}
+.plv__brand a {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-left: 0.35rem;
+}
+
+.plv__desc {
+  font-size: 1.25rem;
+  line-height: 2.1rem;
+  color: var(--text-color-1);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+/* End center */
+
+/* Start Right */
+.plv__right {
+  flex: 1;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plv__price {
+  font-size: 1.8004rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.plv__buttons {
+  width: 100%;
+}
+.plv__buttons button {
+  border-radius: var(--radius);
+  margin-top: 1.4rem;
+  width: 100%;
+}
+/* End Right */
+
+@media (max-width: 767px) {
+  .plv {
+    flex-direction: column;
+  }
+}

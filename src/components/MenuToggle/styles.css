@@ -1,0 +1,30 @@
+.menu__links__section.toggle {
+  margin-top: .7rem;
+  opacity: 0;
+  transition: 0.4s opacity ease;
+}
+.menu__links__section.toggle .menu__links__item {
+  display: none;
+}
+
+.menu__links__item.dash-toggle {
+  column-gap: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.show {
+  opacity: 1 !important;
+}
+.menu__links__section.toggle.show .menu__links__item {
+  display: flex;
+}
+
+.toggle-icon-rotate {
+  transform: rotate(90deg);
+}
+
+.active-toggle {
+  background: var(--menu-active-color);
+  border-radius: var(--radius);
+}
